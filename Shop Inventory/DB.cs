@@ -18,6 +18,7 @@ namespace Shop_Inventory
         SqlConnection sqlcon = new SqlConnection();
         public void openCon()
         {
+            string A = "A";
             string executable = System.Reflection.Assembly.GetExecutingAssembly().Location;
             string path = (System.IO.Path.GetDirectoryName(executable));
             AppDomain.CurrentDomain.SetData("DataDirectory", path);
